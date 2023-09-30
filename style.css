@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+main{
+    width: 100%;
+    position: relative;
+}
+
+.outer{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(22, 85, 87);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding-bottom: 20px;
+   
+}
+.outer>h1{
+    color:whitesmoke;
+    -webkit-text-stroke: 2px rgb(14, 50, 52);
+    font-size: 8vw;
+    font-family: 'Kanit', sans-serif;
+}
+
+.inner{
+    width: 80%;
+    height: 80%;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    border: 4px solid rgb(14, 50, 52);
+    overflow: hidden;
+}
+.inner>.top{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(14, 50, 52); 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    padding: 0 25%; 
+}
+.top>.content>.box{
+    height: 3.5vw;
+    width: 3.5vw;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: rgb(14, 50, 52); 
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+.top>.content{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: whitesmoke;
+    font-size: 1.7vw;
+}
+
+.middle{
+    height: calc(100% - 100px);
+    padding: .62vw;
+    display: flex;
+    gap: .8vw;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.middle>.bubble{
+    height: 2.8vw;
+    width: 2.8vw;
+    border: 2px solid rgb(14, 50, 52);
+    border-radius: 50%;
+    background-color: rgb(22, 85, 87, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    font-size: 1.7vw;
+    font-weight: 500;
+}
+.middle>.bubble:hover{
+    background-color: rgb(22, 85, 87);
+    cursor: pointer;
+}
+
+.end{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.end>h1{
+    font-size: 8vw;
+    color: rgb(22, 85, 87);
+    -webkit-text-stroke: 1.5px rgb(14, 50, 52);
+}
+.end>h4{
+    text-align: center;
+    font-size: 5vw;
+    color: whitesmoke;
+    -webkit-text-stroke: 2px black;
+}
+.end>button{
+    padding: 1vw 2vw;
+    color: whitesmoke;
+    background-color: rgb(22, 85, 87);
+    border: 2px solid rgb(14, 50, 52);
+    font-size: 1.7vw;
+    margin-top: 10px;
+}
+
+@media (max-width: 810px) and (min-height: 1080px){
+    .middle>.bubble{
+        height: 5vw;
+        width: 5vw;
+        border: 2px solid rgb(14, 50, 52);
+        border-radius: 50%;
+        background-color: rgb(22, 85, 87, 0.8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: whitesmoke;
+        font-size: 2vw;
+        font-weight: 500;
+    }
+    .inner>.top{
+        width: 100%;
+        height: 100px;
+        background-color: rgb(14, 50, 52); 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;  
+        padding: 0 18.5%; 
+    }
+    .top>.content{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: whitesmoke;
+        font-size: 2.2vw;
+    }
+    .top>.content>h4{
+        white-space: nowrap;
+    }
+   
+    .top>.content>.box{
+        height: 5vw;
+        width: 5vw;
+        background-color: whitesmoke;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        color: rgb(14, 50, 52); 
+        font-size: 2vw;
+        font-weight: 700;
+        margin-right: 40px;
+    }
+    .end>h1{
+        font-size: 10vw;
+        color: rgb(22, 85, 87);
+        -webkit-text-stroke: 1.5px rgb(14, 50, 52);
+    }
+    .end>h4{
+        text-align: center;
+        font-size: 8vw;
+        color: whitesmoke;
+        -webkit-text-stroke: 2px black;
+    }
+    .end>button{
+        padding: 2vw 4vw;
+        color: whitesmoke;
+        background-color: rgb(22, 85, 87);
+        border: 2px solid rgb(14, 50, 52);
+        font-size: 2.2vw;
+        margin-top: 10px;
+    }
+    
+}
+
